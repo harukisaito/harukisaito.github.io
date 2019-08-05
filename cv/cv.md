@@ -30,6 +30,6 @@ title: Haruki Saito's CV
 * dropped out of high school
 
 2018
-* started an internship at ART+COM Studios
+* started an internship at [ART+COM](https://artcom.de/) Studios
 
 current
