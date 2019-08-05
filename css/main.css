@@ -4,6 +4,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    background-color: tomato;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
