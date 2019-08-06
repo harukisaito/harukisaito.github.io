@@ -1,19 +1,23 @@
-ace the following inside main.css
+/* ace the following inside main.css */
 
-head {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+
+@media only screen and (min-width: 961px) {
+    head {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        font-family:'Helvetica';
+        font-size: small;
+        font-weight: 100;
+    }
 }
 
-body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    font-family:'Helvetica';
-    font-size: small;
-    font-weight: 100;
-}
 nav ul, footer ul {
     font-family:'Helvetica';
     padding: 0px;
