@@ -1,5 +1,3 @@
-/* ace the following inside main.css */
-
 
 @media only screen and (min-width: 961px) {
     head {
@@ -12,6 +10,14 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        font-family:'Helvetica';
+        font-size: small;
+        font-weight: 100;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    body {
         font-family:'Helvetica';
         font-size: small;
         font-weight: 100;
