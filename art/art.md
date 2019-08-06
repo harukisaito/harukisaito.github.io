@@ -4,6 +4,11 @@ I am self thaught and nowhere near professional level. I am just showcasing what
 ## Traditional Drawings
 This is the medium that I am most familiar with, pencil and paper. Before starting my internship at <a href="https://artcom.de/" target="_blank"> ART+COM </a> I didn't even consider trying out a drawing tablet.
 
+<img src="/media/pictures/drawing4.jpg" alt="Drawing" style="width:400px;"/>
+<img src="/media/pictures/drawing1.jpg" alt="Drawing" style="width:400px;"/>
+<img src="/media/pictures/drawing2.jpg" alt="Drawing" style="width:400px;"/>
+<img src="/media/pictures/drawing3.jpg" alt="Drawing" style="width:400px;"/>
+
 ## Animation
 I wanted to try out some animation as I got more confortable with the drawing tablet.
 
