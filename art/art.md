@@ -14,7 +14,8 @@ I wanted to try out some animation as I got more confortable with the drawing ta
 ## Digital Drawings
 I also wanted to try playing with colors so I started doing that.
 
-<img src="/media/pictures/night-sky.png" alt="Night sky" style="width:805px;"/>
-<img src="/media/pictures/game-level.png" alt="Game Level Design" style="width:805px;"/>
+<img src="/media/pictures/night-sky.png" alt="Night sky" style="width:400px;"/>
+<img src="/media/pictures/game-level.png" alt="Game Level Design" style="width:400px;"/>
+
 <img src="/media/pictures/portrait1.png" alt="Portrait of girl 1" style="width:400px;"/>
 <img src="/media/pictures/portrait2.png" alt="Portrait of girl 2" style="width:400px;"/>
