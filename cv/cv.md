@@ -5,31 +5,45 @@ title: Haruki Saito's CV
 
 # Haruki Saito
 
-### E-Mail: harukisaitowork@gmail.com
+## E-Mail: harukisaitowork@gmail.com
 
-* 19 years old
-* Languages
-    * German (native level)
-    * English (close to native)
-    * Japanese (currently N3 level absolved)
-* Skills
-    * knowledge in programming
-        * mainly C#
-        * 6 months experience with Unity
-    * decent drawing skills
 
-2000
+## Languages
 
-2006
-* attended primary school
+German (native level)
 
-2012
-* attended middle school and high school
+English (close to native)
 
-2018
-* dropped out of high school
+Japanese (currently N3 level absolved)
 
-2018
-* started an internship at [ART+COM](https://artcom.de/) Studios
+## Skills
 
-current
+C# language
+
+6 months experience with Unity
+
+decent drawing skills
+
+
+
+## 2000
+
+born 00
+
+## 2006
+
+attended primary school
+
+## 2012
+
+attended middle school and high school
+
+## 2018
+
+dropped out of high school
+
+## 2018
+
+started an internship at <a href="https://artcom.de/" target="_blank"> ART+COM </a> Studios
+
+## current

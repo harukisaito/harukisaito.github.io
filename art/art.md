@@ -2,7 +2,7 @@
 I am self thaught and nowhere near professional level. I am just showcasing what I did up to this point.
 
 ## Traditional Drawings
-This is the medium that I am most familiar with, pencil and paper. Before starting my internship at [ART+COM](https://artcom.de/) I didn't even consider trying out a drawing tablet.
+This is the medium that I am most familiar with, pencil and paper. Before starting my internship at <a href="https://artcom.de/" target="_blank"> ART+COM </a> I didn't even consider trying out a drawing tablet.
 
 ## Animation
 I wanted to try out some animation as I got more confortable with the drawing tablet.
