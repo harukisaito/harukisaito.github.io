@@ -1,0 +1,120 @@
+#content {
+    font-size: 1.5em;
+    line-height: 40px;
+    /* background-color: pink; */
+}
+
+#display {
+    display: flex;
+}
+
+.padding {
+    /* background-color: red; */
+    padding-right: 150px;
+}
+
+#languages {
+    width: 50%;
+    /* background-color:blue; */
+}
+
+#skills {
+    width: 50%;
+    /* background-color: beige; */
+}
+
+.points {
+    list-style: none;
+}
+
+.year {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.time-info {
+    padding-left: 100px;
+}
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    /* background-color: aliceblue; */
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    position: relative;
+    background-color: inherit;
+    padding-left: 40px;
+    width: 50%;
+}
+  
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid black;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+  
+/* The actual content */
+.content {
+    /* background-color: blue; */
+    padding-left: 50px;
+}
+
+.timeline::after {
+    left: 31px;
+}
+
+/* Make sure all circles are at the same spot */
+.left::after { 
+    left: 15px;
+}
+
+#footer {
+    padding-top: 100px;
+}
+
+#footer ul li {
+    display: inline-block;
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+.delay-2 {
+    animation-delay: 0.2s;
+}
+.delay-3 {
+    animation-delay: 0.3s;
+}
+.delay-4 {
+    animation-delay: 0.4s;
+}
+.delay-5 {
+    animation-delay: 0.5s;
+}
