@@ -7,9 +7,10 @@ title: Developement
         <link rel="stylesheet" type="text/css" href="/css/developer.css">
         <link href="css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="animate.min.css">
+        <link rel="stylesheet" href="/css/animation-delay.css">
     </head>
-<div id="content">
-    <div id="developer-description" class="animated fadeIn">
+<div class="container">
+    <div class="row animated fadeIn" id="developer-description">
             I had no prior knowledge about programming before I started here and had little to no interest in it. 
             My Journey started with the basics of the C# language where I built my first ever program inside the console. 
             It was a "simulation" of a city in which there were humans and pets who could eat, work, do sports and have fun. 
@@ -17,47 +18,48 @@ title: Developement
             This is where I learned everything about classes, inheritance and much more about Object Oriented Programming.
     </div>
 
-
-    <h2 id="headline" class="animated fadeIn delay-1">Unity</h2>
-    <div id="unity-description" class="animated fadeIn delay-2">
-        I started learning Unity in the beginning of 2019. Here I am showing off the projects I worked on.
+    <div class="row">
+        <h2 class="headline animated fadeIn delay-1">Unity</h2>
+    </div>
+    <div id="unity-description" class="row animated fadeIn delay-2">
+        I started learning Unity in the beginning of 2019.
     </div>
 
 
-    <div id="space-invaders" class="topic animated fadeIn delay-3">
-        <div class="background right">01</div>
-        <div class="media animated fadeIn delay-4">
+    <div class="row topic animated fadeIn delay-3" id="space-invaders">
+        <div class="background">01</div>
+        <div class="col-4 media animated fadeIn delay-4">
             <img src="/media/gifs/space-invaders.gif" alt="Space Invaders" class="image"/>
         </div>
-        <div class="text animated fadeIn delay-3">
-            <a href="developer/space-invaders.html" class="headline">Space Invaders</a>
+        <div class="col-8 text animated fadeIn delay-3">
+            <a href="developer/space-invaders.html" class="headline">space invaders</a>
             <br>
             This is a remake of the classic in arcades, Space Invaders!
             <a href="https://github.com/harukisaito/space-invaders" target="_blank" class="fab fa-github"></a>
         </div>
     </div>
     
-    <div id="super-mario" class="topic animated fadeIn delay-3">
-        <div class="background left">02</div>
-        <div class="text animated fadeIn delay-3">
-            <a href="developer/super-mario.html" class="headline">Super Mario</a>
+    <div class="row topic animated fadeIn delay-3" id="super-mario">
+        <div class="background">02</div>
+        <div class="col-4 media animated fadeIn delay-4">
+            <img src="/media/gifs/super-mario.gif" alt="Super Mario" class="image"/>     
+        </div>
+        <div class="col-8 text animated fadeIn delay-3">
+            <a href="developer/super-mario.html" class="headline">super mario</a>
             <br>
             This is a remake of yet another classic. 
             Good memories were made.
             <a href="https://github.com/harukisaito/super-mario" target="_blank" class="fab fa-github"></a>
         </div>
-        <div class="media animated fadeIn delay-4">
-            <img src="/media/gifs/super-mario.gif" alt="Super Mario" class="image"/>     
-        </div>
     </div>
 
-    <div id="solar-system" class="topic animated fadeIn delay-3">
-        <div class="background right">03</div>
-        <div class="media animated fadeIn delay-4">
+    <div class="row topic animated fadeIn delay-3" id="solar-system" >
+        <div class="background">03</div>
+        <div class="col-4 media animated fadeIn delay-4">
             <img src="/media/gifs/solar-system.gif" alt="Solar System" class="image"/>
         </div>
-        <div class="text animated fadeIn delay-3">
-            <a href="developer/solar-system.html" class="headline">Solar System</a>
+        <div class="col-8 text animated fadeIn delay-3">
+            <a href="developer/solar-system.html" class="headline">solar system</a>
             <br>
             This is a simulation of our solar-system.
             You can see the real scale of our system and just watch the planets as they spin.
@@ -65,27 +67,27 @@ title: Developement
         </div>
     </div>
     
-    <div id="doctor-game" class="topic animated fadeIn delay-3">
-        <div class="background left">04</div>
-        <div class="text animated fadeIn delay-3">
-            <a href="developer/doctor-game.html" class="headline">'Doctor' - My own game</a>
+    <div class="row topic animated fadeIn delay-3" id="doctor-game" >
+        <div class="background">04</div>
+        <div class="col-4 media animated fadeIn delay-4">
+            <img src="/media/gifs/doctor-game.gif" alt="Doctor Game" class="image"/>
+        </div>
+        <div class="col-8 text animated fadeIn delay-3">
+            <a href="developer/doctor-game.html" class="headline">doctor - my own game</a>
             <br>
             This is my attempt at making a game.
             A Jump and Run Game with simple two-dimensional graphics drawn by myself.
             <a href="https://github.com/harukisaito/doctor" target="_blank" class="fab fa-github"></a>
         </div>
-        <div class="media animated fadeIn delay-4">
-            <img src="/media/gifs/doctor-game.gif" alt="Doctor Game" class="image"/>
-        </div>
     </div>
     
-    <div id="procedural-city" class="topic animated fadeIn delay-3">
-        <div class="background right">05</div>
-        <div class="media animated fadeIn delay-4">
+    <div class="row topic animated fadeIn delay-3" id="procedural-city">
+        <div class="background">05</div>
+        <div class="col-4 media animated fadeIn delay-4">
             <img src="/media/gifs/procedural-city.gif" alt="Procedural City" class="image"/>
         </div>
-        <div class="text animated fadeIn delay-3">
-            <a href="developer/procedural-city.html" class="headline">Procedural City</a>
+        <div class="col-8 text animated fadeIn delay-3">
+            <a href="developer/procedural-city.html" class="headline">procedural city</a>
             <br>
             This project is about making a city that can be procedurally created.
             <a href="https://github.com/harukisaito/procedural-city" target="_blank" class="fab fa-github"></a>

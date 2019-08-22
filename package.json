@@ -54,5 +54,8 @@
   },
   "spm": {
     "main": "./animate.css"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
   }
 }

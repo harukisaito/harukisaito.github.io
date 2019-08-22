@@ -1,62 +1,54 @@
 
-@media only screen and (min-width: 961px) {
-    html, body {
-        font-family:'Helvetica';
-        font-size: small;
-        font-weight: lighter;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        /* background-image: url("/media/pictures/lines.png"); */
-        background-repeat: no-repeat;
-        background-size: 60%;
-    }
+html, body {
+    font-family:'Helvetica';
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
 }
 
-@media only screen and (max-width: 960px) {
-    body {
-        font-family:'Helvetica';
-        font-size: small;
-        font-weight: 300;
-    }
-}
-#container {
+.container {
     min-height: 100%;
     height: 100%;
     position: relative;
     /* background-color: aqua; */
 }
-#body {
-    padding-top: 300px;
-    padding-bottom: 60px;
+#logo {
+    /* background-color: beige; */
+    font-size: 5em;
+    line-height: 60px;
+    padding-left: 40px;
 }
-#body-left {
-    float: left;
-    width: 30%;
-    font-size: 1.2em;
-    position: fixed;
-    /* background-color: #333; */
+#container {
+    padding-top: 100px;
 }
-
-#body-right {
-    float: right;
-    width: 70%;
-    /* background-color: #999; */
-}
-#footer {
-    width: 100%;
-    /* background-color: blueviolet; */
+#navbar {
+    line-height: 30px;
+    padding-left: 40px;
+    /* background-color: azure; */
 }
 
-#footer ul {
-    list-style: none;
+#content {
+    /* background-color: aquamarine; */
 }
-nav ul, footer ul {
-    font-family:'Helvetica';
-    line-height: 2;
-    list-style: none;
-    font-weight: bold;
+.row {
+    margin: 0;
+    padding: 0;
 }
+h1 {
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     font-size: 1.2em;
@@ -64,28 +56,4 @@ a {
 }
 a:hover {
     color: beige;
-}
-#logo {
-    padding-left: 40px;
-    font-size: 5em;
-    font-weight: 900;
-    position: fixed;
-    /* transform: rotate(90deg); */
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer ul li {
-    margin-right: 20px;
-    display: inline-block;
-}
-
-footer {
-    font-size: .8em;
 }

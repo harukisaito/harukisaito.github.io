@@ -1,43 +1,12 @@
-#content {
-    font-size: 1.5em;
-    line-height: 40px;
-    /* background-color: pink; */
-}
-
-#display {
-    display: flex;
-}
-
-.padding {
-    /* background-color: red; */
-    padding-right: 150px;
-}
-
-#languages {
-    width: 50%;
-    /* background-color:blue; */
-}
-
-#skills {
-    width: 50%;
-    /* background-color: beige; */
-}
-
-.points {
-    list-style: none;
-}
-
 .year {
     color: rgba(0, 0, 0, 0.3);
     font-weight: bold;
     font-size: 2em;
 }
 
-.time-info {
-    padding-left: 100px;
+.field {
+    padding-top: 5px;
 }
-
-
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -52,26 +21,21 @@
     width: 6px;
     background-color: black;
     top: 0;
-    bottom: 100px;
-    left: 50%;
-    margin-left: -3px;
+    bottom: 0;
 }
 
 /* Container around content */
-.container {
+.container-time {
     position: relative;
     background-color: inherit;
-    padding-left: 40px;
-    width: 50%;
 }
   
 /* The circles on the timeline */
-.container::after {
+.container-time::after {
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
     background-color: white;
     border: 4px solid black;
     top: 0px;
@@ -84,16 +48,17 @@
 .content {
     /* background-color: blue; */
     padding-left: 50px;
+    padding-bottom: 40px;
+}
+
+.content h2 {
+    padding-bottom: 5px;
 }
 
 .timeline::after {
-    left: 31px;
+    left: 24px;
 }
 
-/* Make sure all circles are at the same spot */
-.left::after { 
-    left: 15px;
-}
 
 #footer {
     padding-top: 100px;
@@ -103,18 +68,6 @@
     display: inline-block;
 }
 
-.delay-1 {
-    animation-delay: 0.1s;
-}
-.delay-2 {
-    animation-delay: 0.2s;
-}
-.delay-3 {
-    animation-delay: 0.3s;
-}
-.delay-4 {
-    animation-delay: 0.4s;
-}
-.delay-5 {
-    animation-delay: 0.5s;
+#timeline-headline {
+    padding-bottom: 10px;
 }
