@@ -5,12 +5,29 @@
     font-weight: 900;
 }
 .container {
-    padding-right: 100px;
+    /* padding-right: 100px; */
 }
 .topic {
     padding-bottom: 100px;
     align-items: center;
     position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .text {
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .background {
+        position: absolute;
+        padding-left: 200px;
+        font-size: 20em;
+        font-weight: 900;
+        opacity: 0.1; 
+    }
 }
 
 .image {
@@ -36,18 +53,13 @@
     padding: 0;
     margin: 0;
 }
-.text {
-}
-
-.background {
+/* .background {
     position: absolute;
     padding-left: 200px;
     font-size: 20em;
     font-weight: 900;
     opacity: 0.1;
-}
-.row {
-}
+} */
 
 #developer-description {
     padding-bottom: 100px;

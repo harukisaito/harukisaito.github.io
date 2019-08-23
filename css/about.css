@@ -8,6 +8,15 @@
     padding-top: 5px;
 }
 
+@media only screen and (max-width: 768px) {
+    #skills {
+        padding-top: 50px;
+    }
+}
+#field {
+    padding-bottom: 50px;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
@@ -61,7 +70,8 @@
 
 
 #footer {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #footer ul li {
@@ -70,4 +80,8 @@
 
 #timeline-headline {
     padding-bottom: 10px;
+}
+.info {
+    font-weight: 600;
+    color: tomato
 }

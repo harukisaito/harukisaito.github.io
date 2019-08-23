@@ -6,21 +6,21 @@
 			<link rel="stylesheet" href="animate.min.css">
 			<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
 			<link rel="stylesheet" href="/css/animation-delay.css">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		</head>
 		<body>
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
-					<div class="col" id="logo">
+					<div class="col-md" id="logo">
 						haruki <br>
 						saito
 					</div>
 				</div>
 				<div class="row" id="container">
-					<div class="col-3" id="navbar">
+					<div class="col-md-3" id="navbar">
 						{% include navigation.html %}
 					</div>
-					<div class="col-9" id="content">
+					<div class="col-md-9" id="content">
 						{{ content }}
 					</div>
 				</div>
