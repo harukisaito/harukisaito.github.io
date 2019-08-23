@@ -1,0 +1,26 @@
+#jap {
+    
+    line-height: 37px;
+    font-family: 'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
+}
+.col {
+    padding: 0;
+}
+
+.middle {
+    position:relative;
+    left: -200px;
+}
+.right {
+    position:relative;
+    left: -500px;
+}
+
+div {
+    overflow: hidden;
+    padding:0;
+}
+h1 {
+    position:relative;
+    white-space: nowrap;
+}
