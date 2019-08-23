@@ -36,9 +36,12 @@
         position: absolute;
         padding-left: 200px;
         font-size: 20em;
-        font-weight: 900;
         opacity: 0.1; 
     }
+}
+
+.background {
+    font-weight: 900;
 }
 
 #developer-description {
