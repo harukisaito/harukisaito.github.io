@@ -1,7 +1,5 @@
 .headline {
     color: black;
-    font-size: 2em;
-    padding-bottom: 10px;
     font-weight: 900;
 }
 .container {
@@ -18,6 +16,19 @@
         padding: 0;
         margin: 0;
         padding-top: 20px;
+        font-weight: 400;
+    }
+
+    #developer-description {
+        font-weight: 400;
+    }
+
+    #unity-description {
+        font-weight: 400;
+    }
+
+    .topic {
+        font-weight: 400;
     }
 }
 @media only screen and (min-width: 769px) {
@@ -30,6 +41,15 @@
     }
 }
 
+#developer-description {
+    color: rgb(100, 100, 100);
+}
+#unity-description {
+    color: rgb(100, 100, 100);
+}
+.text {
+    color: rgb(100, 100, 100);
+}
 .image {
     display: block;
     font-size: 0;
