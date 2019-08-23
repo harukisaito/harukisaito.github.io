@@ -2,9 +2,6 @@
     color: black;
     font-weight: 900;
 }
-.container {
-    /* padding-right: 100px; */
-}
 .topic {
     padding-bottom: 100px;
     align-items: center;
@@ -76,13 +73,6 @@
     padding: 0;
     margin: 0;
 }
-/* .background {
-    position: absolute;
-    padding-left: 200px;
-    font-size: 20em;
-    font-weight: 900;
-    opacity: 0.1;
-} */
 
 #developer-description {
     padding-bottom: 100px;
