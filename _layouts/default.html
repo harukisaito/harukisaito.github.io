@@ -2,11 +2,11 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" href="/css/main.css">
 			<link rel="stylesheet" href="animate.min.css">
 			<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
 			<link rel="stylesheet" href="/css/animation-delay.css">
-			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 		</head>
 		<body>
 			<div class="container">
@@ -18,7 +18,22 @@
 				</div>
 				<div class="row" id="container">
 					<div class="col-md-3" id="navbar">
-						{% include navigation.html %}
+						<nav>
+							<ul>
+								<li><a class="noSelect" href="/" 
+								{% if page.url == "/" %}style="color: black;"{% endif %}
+								>home</a> </li>
+								<li><a class="noSelect" href="/about.html"
+								{% if page.url == "/about" %}style="color: black;"{% endif %}
+								>about</a> </li>
+								<li><a class="noSelect" href="/developer.html"
+								{% if page.url == "/developer" %}style="color: black;"{% endif %}
+								>developer</a> </li>
+								<li><a class="noSelect" href="/design.html"
+								{% if page.url == "/design" %}style="color: black;"{% endif %}
+								>design</a> </li>
+							</ul>
+						</nav>
 					</div>
 					<div class="col-md-9" id="content">
 						{{ content }}
