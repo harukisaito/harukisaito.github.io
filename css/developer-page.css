@@ -69,8 +69,11 @@
     width: 100%;
   }
 
-  .text {
+  .segment {
     padding-left: 15px;
+  }
+  
+  .text {
     padding-top: 20px;
     font-weight: 400;
   }

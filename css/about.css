@@ -14,6 +14,12 @@
     }
 }
 
+.container {
+    padding: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
 #field {
     padding-bottom: 50px;
 }

@@ -3,6 +3,12 @@
     line-height: 37px;
     font-family: 'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
 }
+
+.container {
+    padding: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
 .col {
     padding: 0;
 }

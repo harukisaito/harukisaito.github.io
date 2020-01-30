@@ -1,5 +1,4 @@
 .headline {
-    
     color: black;
     font-weight: 900;
 }
@@ -7,6 +6,14 @@
     padding-bottom: 100px;
     align-items: center;
     position: relative;
+    /* padding: 0;
+    margin: 0; */
+}
+
+.container {
+    padding: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 @media only screen and (min-width: 769px) {
@@ -15,6 +22,17 @@
         padding-left: 200px;
         font-size: 20em;
         opacity: 0.1; 
+    }
+
+    .image {
+        display: block;
+        font-size: 0;
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        transition: 0.5s ease;
+        -webkit-filter: grayscale(70%);
+        filter: grayscale(70%);
     }
 }
 
@@ -31,16 +49,7 @@
 .text {
     color: rgb(100, 100, 100);
 }
-.image {
-    display: block;
-    font-size: 0;
-    object-fit: cover;
-    width: 300px;
-    height: 300px;
-    transition: 0.5s ease;
-    -webkit-filter: grayscale(70%);
-    filter: grayscale(70%);
-}
+
 
 .image:hover {
     transition: .5s ease;
@@ -92,6 +101,17 @@
 
     .topic {
         font-weight: 400;
+    }
+
+    .image {
+        display: block;
+        font-size: 0;
+        object-fit: cover;
+        width: 92vw;
+        height: 50vh;
+        transition: 0.5s ease;
+        -webkit-filter: grayscale(70%);
+        filter: grayscale(70%);
     }
 
 }
