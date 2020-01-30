@@ -15,10 +15,6 @@
 }
 
 @media only screen and (min-width: 960px) {
-    #description {
-        /* background-color: red; */
-        margin-left: 70px;
-    }
 }
 
 #description {
@@ -33,29 +29,6 @@
 }
 .topic {
     padding-top: 50px;
-}
-
-.headline-outer {
-    display:table;
-    /* background-color: blue; */
-}
-
-.headline-inner {
-    padding: 50% 0;
-    height: 0;
-}
-
-.headline-inner a {
-    display: block;
-    transform-origin: top left;
-    transform: rotate(-90deg) translate(-100%);
-    margin-top: -50%;
-    margin-left: -20px;
-    z-index: 1;
-    white-space: nowrap;
-    letter-spacing: 4px;
-    position: relative;
-    color: rgb(200, 200, 200);
 }
 
 .images {
