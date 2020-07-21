@@ -1,93 +1,108 @@
-.year {
-    color: rgba(0, 0, 0, 0.3);
-    font-weight: bold;
-    font-size: 2em;
-}
-
-.field {
-    padding-top: 5px;
-}
-
 @media only screen and (max-width: 768px) {
     .info {
         font-weight: 400;
     }
+
+    .skills-field {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .outer-left {
+        padding-left: 300px;
+    }
+    
+    .outer-right {
+        padding-right: 300px;
+    }
+
+    .skills-field {
+        font-size: 30px;
+    }
 }
 
 .container {
+    /* background-color: aqua; */
     padding: 0;
     padding-left: 4vw;
     padding-right: 4vw;
 }
 
-#field {
-    padding-bottom: 50px;
+.noborders {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-    position: relative;
-    /* background-color: aliceblue; */
+.tab-headline {
+    font-size: 50px;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: grey;
-    top: 0;
-    bottom: 0;
+.section {
+    margin: 0;
 }
 
-/* Container around content */
-.container-time {
-    position: relative;
-    background-color: inherit;
-}
-  
-/* The circles on the timeline */
-.container-time::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: grey;
-    border: 5px solid white;
-    top: 0px;
-    border-radius: 50%;
-    z-index: 1;
-}
-  
-  
-/* The actual content */
-.content {
-    /* background-color: blue; */
-    padding-left: 50px;
-    padding-bottom: 40px;
-}
-
-.content h2 {
-    padding-bottom: 5px;
-}
-
-.timeline::after {
-    left: 24px;
-}
-
-
-#footer {
+.section-container {
+    /* background-color: wheat; */
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-#footer ul li {
-    display: inline-block;
+.headline {
+    text-align: center;
+    color: rgb(22, 15, 41);
+    padding-bottom: 50px;
 }
 
-#timeline-headline {
-    padding-bottom: 10px;
+.field {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
+
+.language-number {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.language-headline {
+    font-size: 40px;
+}
+
+.image {
+    height: 100px;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 64px;
+    max-width: 160px;
+}
+
+.info-head {
+    color: rgb(36, 106, 115);
+    font-weight: 700;
+}
+
 .info {
-    color: rgb(100, 100, 100);
+    color: rgb(22, 15, 41);
+    font-weight: 400;
+}
+
+#languages {
+    background-color: rgb(243, 223, 193);
+}
+
+#skills {
+    background-color: rgb(221, 190, 168);
+}
+
+#timeline {
+    background-color: rgb(243, 223, 193);
+}
+
+.year {
+    color: rgb(36, 106, 115);
 }

@@ -9,35 +9,44 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 		</head>
 		<body>
-			<div class="container">
-				<div class="row">
-					<div class="col-md" id="logo">
-						haruki <br>
-						saito
+			<div class="container noborders">
+				<div class="row nomargin navbar"> 
+					<div class="col-md-4" id="haruki">
+						<a href="/" class="name-text">
+							haruki
+						</a>
 					</div>
+					<div class="col-md-4 navigation">
+						<div>
+							<a class="noSelect navigation-text" href="/" 
+							{% if page.url == "/" %}style="color: rgb(22, 15, 41);"{% endif %}
+							>home</a>
+							<a class="noSelect navigation-text" href="/about.html"
+							{% if page.url == "/about" %}style="color: rgb(22, 15, 41);"{% endif %}
+							>about</a>
+							<a class="noSelect navigation-text" href="/developer.html"
+							{% if page.url == "/developer" %}style="color: rgb(22, 15, 41);"{% endif %}
+							{% if page.url == "/developer/space-invaders" %}style="color: rgb(22, 15, 41);"{% endif %}
+							{% if page.url == "/developer/super-mario" %}style="color: rgb(22, 15, 41);"{% endif %}
+							{% if page.url == "/developer/solar-system" %}style="color: rgb(22, 15, 41);"{% endif %}
+							{% if page.url == "/developer/doctor-game" %}style="color: rgb(22, 15, 41);"{% endif %}
+							{% if page.url == "/developer/procedural-city" %}style="color: rgb(22, 15, 41);"{% endif %}
+							>developer</a>
+							<a class="noSelect navigation-text" href="/design.html"
+							{% if page.url == "/design" %}style="color: rgb(22, 15, 41);"{% endif %}
+							>design</a>
+							<span></span>
+						</div>
+					</div>
+					<div class="col-md-4" id="saito">
+						<a href="/" class="name-text">
+							saito
+						</a>
+					</div>
+
 				</div>
-				<div class="row" id="container">
-					<div class="col-md-3" id="navbar">
-						<nav>
-							<ul>
-								<li><a class="noSelect" href="/" 
-								{% if page.url == "/" %}style="color: black;"{% endif %}
-								>home</a> </li>
-								<li><a class="noSelect" href="/about.html"
-								{% if page.url == "/about" %}style="color: black;"{% endif %}
-								>about</a> </li>
-								<li><a class="noSelect" href="/developer.html"
-								{% if page.url == "/developer" %}style="color: black;"{% endif %}
-								>developer</a> </li>
-								<li><a class="noSelect" href="/design.html"
-								{% if page.url == "/design" %}style="color: black;"{% endif %}
-								>design</a> </li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-md-9" id="content">
-						{{ content }}
-					</div>
+				<div class="row noborders" id="container">
+					{{ content }}
 				</div>
 			</div>
 		</body>

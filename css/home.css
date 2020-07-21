@@ -1,18 +1,15 @@
-#jap {
-    
-    line-height: 37px;
-    font-family: 'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
-}
-
 .container {
     padding: 0;
     padding-left: 4vw;
     padding-right: 4vw;
-}
-.col {
-    padding: 0;
+    padding-bottom: 500px;
 }
 
+.text-block {
+    color: rgb(22, 15, 41);
+}
+
+/* for the text in the middle */
 .middle {
     position:relative;
     left: -200px;
@@ -22,11 +19,17 @@
     left: -500px;
 }
 
-div {
+#jap {
+    line-height: 37px;
+    font-family: 'Roboto';
+}
+
+.col {
     overflow: hidden;
     padding:0;
 }
-h1 {
+
+.textblock {
     position:relative;
     white-space: nowrap;
 }
