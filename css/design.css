@@ -1,41 +1,13 @@
 @media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+    
 }
 
 @media only screen and (max-width: 560px) {
-    .headline-outer {
-        margin-left: 5px;
-    }
-
-    .bigPic {
-        margin: 0;
-        width: 42vw;
-        height: 95vw;
-    }
     
-    .smallPic {
-        width: 42vw;
-        height: 44vw;
-        margin-left: 3vw;
-    }
-
-    .cornerImg {
-        margin-top: 7vw;
-    }
 }
 
 @media only screen and (min-width: 561px ) {
-    .bigPic {
-        max-width: 100%;
-        height: 460px;
-    }
-
-    .smallPic {
-        width: 50%;
-        height: 230px;
-    }
+   
 }
 
 .container {
@@ -48,91 +20,20 @@
     padding-bottom: 50px;
 }
 
+.topic-headline {
+    font-size: 20px;
+    width: 100%;
+}
+
 .card-columns {
     column-count: 3;
+}
+
+.picture-container {
+    padding-top: 20px;
 }
 
 .picture {
     width: 300px;
     height: auto;
-}
-
-.images {
-    display: flex;
-    justify-content: space-between;
-}
-
-.drawing {
-    object-fit: cover;
-    transition: 0.5s ease;
-    -webkit-filter: grayscale(70%);
-    filter: grayscale(70%);
-    display: block;
-}
-
-.container {
-    padding: 0;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    padding-bottom: 100px;
-}
-
-.drawing:hover {
-    transition: .5s ease;
-    -webkit-filter: none;
-    filter: none;
-}
-
-.noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-#myImg {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(255,255,255, 0.7)
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 1000px;
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #282828;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
 }
