@@ -48,6 +48,15 @@
     padding-bottom: 50px;
 }
 
+.card-columns {
+    column-count: 3;
+}
+
+.picture {
+    width: 300px;
+    height: auto;
+}
+
 .images {
     display: flex;
     justify-content: space-between;
