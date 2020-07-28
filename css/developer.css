@@ -1,27 +1,62 @@
 @media only screen and (min-width: 769px) {
-    .image {
+    .image img {
+        width: 250px;
+        height: 250px;
+        transition: 0.5s ease;
+        filter: grayscale(80%);
+    }
+
+    .text-frame {
+        width: 250px;
+        height: 200px;
+    }
+
+    .left {
+        text-align: right;
+    }
+
+    .left-text {
+        float: right;
+    }
+
+    .center img {
         display: block;
-        font-size: 0;
-        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .center-text {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .image img {
         width: 300px;
         height: 300px;
         transition: 0.5s ease;
-        -webkit-filter: grayscale(70%);
-        filter: grayscale(70%);
+        filter: grayscale(80%);
     }
 
     .text-frame {
         width: 300px;
-        height: 300px;
-        background-color: wheat;
+        height: 200px;
     }
 
     .left {
+        text-align: right;
+    }
+
+    .left-text {
         float: right;
     }
 
-    .right {
-        float: left;
+    .center img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .center-text {
+        margin: auto;
     }
 }
 
@@ -37,15 +72,21 @@
         font-weight: 400;
     }
 
-    .image {
-        display: block;
-        font-size: 0;
-        object-fit: cover;
-        width: 92vw;
-        height: 50vh;
+    .image img {
+        width: 350px;
+        height: 350px;
         transition: 0.5s ease;
-        -webkit-filter: grayscale(70%);
-        filter: grayscale(70%);
+        filter: grayscale(80%);
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .text-frame {
+        width: 350px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -70,13 +111,6 @@
     padding-bottom: 50px;
 }
 
-.media {
-    line-height: 0;
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-
 .noSelect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -96,8 +130,4 @@
 .text {
     color: rgb(36, 106, 115);
     font-weight: 400;
-}
-
-h2 {
-    color: rgb(22, 15, 41);
 }
