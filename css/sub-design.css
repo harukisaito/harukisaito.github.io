@@ -17,7 +17,7 @@
 }
 
 .topic {
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 }
 
 .topic-headline {
@@ -27,18 +27,6 @@
 
 .card-columns {
     column-count: 3;
-}
-
-.picture-container {
-    overflow: hidden;
-    width: 200px !important;
-    height: 200px;
-}
-
-.picture-container img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
 }
 
 .picture {
