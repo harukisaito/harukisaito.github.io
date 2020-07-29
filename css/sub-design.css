@@ -18,6 +18,7 @@
 
 .topic {
     padding-bottom: 50px;
+    margin: 0 !important;
 }
 
 .topic-headline {
@@ -29,7 +30,11 @@
     column-count: 3;
 }
 
+.picture-container {
+    width: 250px !important;
+}
+
 .picture {
-    width: 300px;
+    width: 250px;
     height: auto;
 }

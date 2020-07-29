@@ -148,7 +148,7 @@ html, body {
 
 .navbar {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 75px !important;
 }
 
 #content {
