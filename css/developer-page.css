@@ -23,52 +23,8 @@
   transition: 0.3s;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(255,255,255, 0.9)
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 1000px;
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #282828;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-
   .segment {
     padding-left: 15px;
   }
@@ -77,6 +33,22 @@
     padding-top: 20px;
     font-weight: 400;
   }
+}
+
+.card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 10px;
+  color: black;
+}
+
+.card-text {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .point {

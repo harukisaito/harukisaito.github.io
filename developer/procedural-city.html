@@ -4,58 +4,45 @@ title: Procedural City
 ---
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/developer.css">
-    <link rel="stylesheet" href="/animate.min.css">
-    <link rel="stylesheet" href="/css/animation-delay.css">
     <link rel="stylesheet" href="/css/developer-page.css">
-    <script src="/javascript/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="/javascript/start-autoplay.js"></script>
 </head>
         
-<div id="content" class="animated fadeIn">
-    <h2>Procedural City</h2>
-    <div> 
-        <div class="description text">
-            This is a city that can be procedurally created and was the foundation of another project about 
-            visualization of geographical data. I modeled some buildings in Unity with the ProBuilder Package and 
-            then spawned them inside a "block". 
-            These blocks were then spawned on a bigger grid to make up this city.
-            The size of the blocks and the grid can be manipulated freely to make the city as big as one wants to 
-            or the computer can handle.
-
-            The other project was about having a distorted view onto a point inside in this example New York City.
-            Meaning that you can recognize the buildings inside New York 
-            but can also see the coastline of East America.
+<div class="container">
+    <div class=container>
+        <h2>Procedural City</h2>
+        <div> 
+            <div class="description text">
+                This is a city that can be procedurally created and was the foundation of another project about 
+                visualization of geographical data. I modeled some buildings in Unity with the ProBuilder Package and 
+                then spawned them inside a "block". 
+                These blocks were then spawned on a bigger grid to make up this city.
+                The size of the blocks and the grid can be manipulated freely to make the city as big as one wants to 
+                or the computer can handle.
+            </div>
         </div>
-        <div class="media container">
-            <div class="row point">
-                <div class="col-md-6">
-                    <video controls muted loop class="video animated fadeIn delay-1 noSelect">
-                        <source src="/media/videos/city-1.webm" type="video/webm">
-                    </video>
-                </div>
-                <div class="col-md-6 segment text">
-                    The process of how the city is generated visualized.
+        <div class="card-columns text-center">
+            <div class="card">
+                <video controls muted loop class="card-img-top">
+                    <source src="/media/videos/city-1.webm" type="video/webm">
+                </video>
+                <div class="card-body">
+                    <p class="card-text">The process of how the city is generated visualized.</p>
                 </div>
             </div>
-            <div class="row point">
-                <div class="col-md-6">
-                    <video controls muted loop class="video animated fadeIn delay-1 noSelect">
-                        <source src="/media/videos/city-2.webm">
-                    </video>
-                </div>
-                <div class="col-md-6 segment text">
-                    The process of how the city is generated visualized.
+            <div class="card">
+                <video controls muted loop class="card-img-top">
+                    <source src="/media/videos/city-2.webm">
+                </video>
+                <div class="card-body">
+                    <p class="card-text">The process of how the city is generated visualized.</p>
                 </div>
             </div>
-            <div class="row point">
-                <div class="col-md-6">
-                    <video controls muted loop class="video animated fadeIn delay-1 noSelect">
-                        <source src="/media/videos/city-3.webm">
-                    </video>
-                </div>
-                <div class="col-md-6 segment text">
-                    Close up of the buildings in the city.
+            <div class="card">
+                <video controls muted loop class="card-img-top">
+                    <source src="/media/videos/city-3.webm">
+                </video>
+                <div class="card-body">
+                    <p class="card-text">Close up of the buildings in the city.</p>
                 </div>
             </div>
         </div>

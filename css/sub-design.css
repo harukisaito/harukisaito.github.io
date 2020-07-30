@@ -12,8 +12,8 @@
 
 .container {
     padding: 0;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .topic {
@@ -30,11 +30,15 @@
     column-count: 3;
 }
 
+.card {
+    margin-bottom: 30px !important;
+}
+
 .picture-container {
-    width: 250px !important;
+    max-width: 350px !important;
 }
 
 .picture {
-    width: 250px;
+    width: 350px;
     height: auto;
 }

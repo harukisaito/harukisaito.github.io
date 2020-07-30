@@ -45,8 +45,11 @@
         text-align: justify;
         padding: 0;
         margin: 0;
-        padding-top: 50px;
-        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .navbar {
+        padding-bottom: 10px;
     }
 
     #haruki {
@@ -84,6 +87,11 @@
         max-height: 60px;
     }
 
+    .navbar {
+        padding-top: 25px;
+        padding-bottom: 75px !important;
+    }
+
     .navigation {
         text-align: justify;
         padding: 0;
@@ -115,21 +123,23 @@ html, body {
 }
 
 #haruki {
-    color: rgb(243, 223, 193);
+    color: rgb(243, 223, 193) !important;
     text-align: left;
     padding-left: 50px;
-    padding-top: 20px;
     font-size: 1em;
     font-weight: 100;
 }
 
 #saito {
-    color: rgb(221, 190, 168);
+    color: rgb(221, 190, 168) !important;
     text-align: right;
     padding-right: 50px;
-    padding-top: 20px;
     font-size: 1em;
     font-weight: 100;
+}
+
+.name-text {
+    color: rgb(221, 190, 168);
 }
 
 .noborders {
@@ -144,11 +154,6 @@ html, body {
 
 .nopadding {
     padding: 0 !important;
-}
-
-.navbar {
-    padding-top: 25px;
-    padding-bottom: 75px !important;
 }
 
 #content {
@@ -167,7 +172,7 @@ h2 {
 .navigation-text {
     color: rgb(221, 190, 168);
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 li {
@@ -177,10 +182,13 @@ li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    font-size: 1em !important;
+    font-weight: 500;
 }
 
 a:hover {
+    text-decoration: none;
     color: rgb(243, 223, 193);
 }
 
