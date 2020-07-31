@@ -4,7 +4,8 @@
     }
 
     .skills-field {
-        font-size: 20px;
+        font-size: 1.2em;
+        font-weight: 700;
     }
 }
 
@@ -18,12 +19,12 @@
     }
 
     .skills-field {
-        font-size: 30px;
+        font-size: 1.5em;
+        font-weight: 700;
     }
 }
 
 .container {
-    /* background-color: aqua; */
     padding: 0;
     padding-left: 4vw;
     padding-right: 4vw;
@@ -44,7 +45,6 @@
 }
 
 .section-container {
-    /* background-color: wheat; */
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -52,8 +52,14 @@
 
 .headline {
     text-align: center;
+    font-weight: 700;
     color: rgb(22, 15, 41);
     padding-bottom: 50px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
 }
 
 .field {
@@ -63,12 +69,18 @@
 }
 
 .language-number {
-    font-size: 30px;
+    font-size: 1.5em;
     padding-bottom: 20px;
 }
 
 .language-headline {
-    font-size: 40px;
+    font-size: 2em;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.language-level {
+    font-size: 0.9em;
 }
 
 .image {
@@ -92,17 +104,15 @@ img {
 }
 
 #languages {
-    background-color: rgb(243, 223, 193);
 }
 
 #skills {
-    background-color: rgb(221, 190, 168);
 }
 
 #timeline {
-    background-color: rgb(243, 223, 193);
 }
 
 .year {
-    color: rgb(36, 106, 115);
+    font-size: 2em;
+    font-weight: 700;
 }
