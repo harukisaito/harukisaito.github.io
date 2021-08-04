@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    /* font-family */
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    margin: auto;
+    width: 500px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex: 1 0 5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 10px;
+    width: 1000px;
+    margin: auto;
+}
