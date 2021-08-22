@@ -1,3 +1,5 @@
+/* apply on all sites */
+
 *,
 *::after,
 *::before {
@@ -5,21 +7,27 @@
 }
 
 :root {
-    /* font-family */
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    color: rgb(114, 99, 95);
 }
 
 body {
     margin: 0;
+    background-color: rgb(232, 225, 210);
 }
 
 nav {
     margin: auto;
     width: 500px;
+    padding: 5rem;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     
     display: flex;
     flex-flow: row wrap;
@@ -33,11 +41,116 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(114, 99, 95);
 }
 
 main {
-    padding: 10px;
-    width: 1000px;
+    width: 963px;
     margin: auto;
+}
+
+/* color site */
+
+body {
+    --gap: 20px;
+    --view-icon-size: 2rem;
+    --view-border-color: rgb(114, 99, 95);
+}
+
+#view-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .view-inline {
+        display: inline-block;
+    }
+
+        #view-shapes {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: left;
+            column-gap: var(--gap);
+
+            padding-bottom: 20px;
+        }
+
+            #view-square {
+                width: var(--view-icon-size);
+                height: var(--view-icon-size);
+
+                border-style: solid;
+                border-width: 2px;
+                border-color: var(--view-border-color);
+            }
+
+            #view-rounded {
+                width: var(--view-icon-size);
+                height: var(--view-icon-size);
+
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 0.5rem;
+                border-color: var(--view-border-color);
+                
+            }
+
+            #view-circle { 
+                width: var(--view-icon-size);
+                height: var(--view-icon-size);
+                
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 5rem;
+                border-color: var(--view-border-color);
+            }
+
+        #view-appearance {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            column-gap: var(--gap);
+
+            padding-bottom: 20px;
+        }
+
+            #view-tiles {
+                width: var(--view-icon-size);
+                height: var(--view-icon-size);
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 3px;
+                column-gap: 3px;
+            }
+
+                #view-tiles div {
+                    border-style: solid;
+                    border-width: 2px;
+                    border-radius: 2px;
+                    border-color: var(--view-border-color);
+                }
+
+            #view-stacked {
+                width: var(--view-icon-size);
+                height: var(--view-icon-size);
+
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+                #view-stacked div {
+                    border-style: solid;
+                    border-width: 2px;
+                    border-radius: 2px;
+                    border-color: var(--view-border-color);
+                }
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    row-gap: var(--gap);
+    column-gap: var(--gap);
 }
