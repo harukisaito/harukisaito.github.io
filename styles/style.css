@@ -13,13 +13,28 @@
     color: rgb(114, 99, 95);
 }
 
+html, body {
+    height: 100%;
+}
+
+#nav-area {
+    display: grid;
+}
+
+header, nav {
+    grid-area: 1 / 1;
+}
+
 body {
     margin: 0;
     background-color: rgb(232, 225, 210);
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     margin: auto;
+    margin-top: 2rem;
     width: 500px;
     padding: 5rem;
 }
@@ -41,12 +56,14 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: rgb(114, 99, 95);
+    color: rgb(247, 242, 240);
 }
 
 main {
     width: 963px;
     margin: auto;
+
+    flex: 1 0 auto;
 }
 
 /* color site */
@@ -153,4 +170,18 @@ body {
 
     row-gap: var(--gap);
     column-gap: var(--gap);
+}
+
+footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+svg {
+    flex-shrink: 0;
+}
+
+svg path {
+    fill: rgb(172, 201, 188);
 }
