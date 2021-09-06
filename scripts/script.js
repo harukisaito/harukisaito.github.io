@@ -89,9 +89,7 @@
     );
 
     let bgColor = getComputedStyle(document.body).
-        getPropertyValue('--view-border-color');
-    let dotColor = getComputedStyle(document.body).
-    getPropertyValue('--view-dot-color');
+        getPropertyValue('--view-color');
 
     const viewSquare = () => {
         setActiveDot(squareDot);
@@ -114,7 +112,7 @@
     
     const setActiveDot = (dot) => {
         previousDot.style.backgroundColor = "";
-        dot.style.backgroundColor = dotColor; 
+        dot.style.backgroundColor = bgColor; 
         previousDot = dot;
     }
     
@@ -210,7 +208,7 @@
         }
     }
 
-    viewCircle();
+    viewRounded();
 
     let tiles = document.getElementById("view-tiles");
     let gridContainers = document.getElementsByClassName("grid-container");

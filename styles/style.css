@@ -9,8 +9,8 @@
 :root {
     font-family: 'Urbanist', sans-serif;
     letter-spacing: 0.8px;
-    font-weight: 200;
-    color: rgb(114, 99, 95);
+    font-weight: 800;
+    color: rgb(145, 125, 120);
 }
 
 html, body {
@@ -24,6 +24,7 @@ html, body {
 
 #nav-area {
     display: grid;
+    font-size: 1.2rem;
 }
 
 header, nav {
@@ -32,7 +33,7 @@ header, nav {
 
 body {
     margin: 0;
-    background-color: rgb(228, 222, 209);
+    background-color: rgb(228, 223, 215);
     display: flex;
     flex-direction: column;
 }
@@ -41,7 +42,8 @@ nav {
     margin: auto;
     margin-top: 2rem;
     width: 500px;
-    padding: 5rem;
+    /* padding: 3rem; */
+    padding: 5rem 3rem 5rem 3rem;
 }
 
 nav ul {
@@ -61,7 +63,7 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: rgb(55, 66, 89);
+    color: rgb(128, 101, 95);
 }
 
 main {
@@ -69,6 +71,7 @@ main {
     margin: auto;
 
     flex: 1 0 auto;
+    padding-bottom: 100px;
 }
 
 /* color site */
@@ -76,10 +79,9 @@ main {
 body {
     --gap: 20px;
     --view-icon-size: 2rem;
-    --view-dot-size: 0.3rem;
-    --view-dot-margin: 0.85rem;
-    --view-bg-color: rgb(101, 123, 104);
-    --view-dot-color: rgb(0, 0, 0);
+    --view-dot-size: 0.4rem;
+    --view-dot-margin: 0.8rem;
+    --view-color: rgb(128, 101, 95);
 }
 
 #color-container {
@@ -94,6 +96,7 @@ body {
 
     .view-inline {
         display: inline-block;
+        padding-bottom: 40px;
     }
 
         #view-shapes {
@@ -108,7 +111,7 @@ body {
                 width: var(--view-icon-size);
                 height: var(--view-icon-size);
 
-                background-color: var(--view-bg-color);
+                background-color: var(--view-color);
             }
             
             #view-rounded {
@@ -116,7 +119,7 @@ body {
                 height: var(--view-icon-size);
                 
                 border-radius: 0.5rem;
-                background-color: var(--view-bg-color);
+                background-color: var(--view-color);
                 
             }
             
@@ -125,7 +128,7 @@ body {
                 height: var(--view-icon-size);
                 
                 border-radius: 5rem;
-                background-color: var(--view-bg-color);
+                background-color: var(--view-color);
             }
 
         #view-shapes-dots {
@@ -133,15 +136,14 @@ body {
             flex-flow: row nowrap;
             justify-content: left;
             column-gap: var(--gap);
-            padding-bottom: 20px;
+            padding-top: 5px;
         }
             #view-square-dot {
                 width: var(--view-dot-size);
                 height: var(--view-dot-size);
                 margin: var(--view-dot-margin);
                 
-                border-radius: 0.3rem;
-                /* background-color: var(--view-dot-color); */
+                border-radius: 0.25rem;
             }
             
             #view-rounded-dot {
@@ -149,9 +151,7 @@ body {
                 height: var(--view-dot-size);
                 margin: var(--view-dot-margin);
                 
-                border-radius: 0.3rem;
-                /* background-color: var(--view-dot-color); */
-                
+                border-radius: 0.25rem;
             }
             
             #view-circle-dot { 
@@ -159,8 +159,7 @@ body {
                 height: var(--view-dot-size);
                 margin: var(--view-dot-margin);
                 
-                border-radius: 0.3rem;
-                /* background-color: var(--view-dot-color); */
+                border-radius: 0.25rem;
             }
 
         #view-appearance {
