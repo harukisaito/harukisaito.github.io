@@ -9,12 +9,17 @@
 :root {
     font-family: 'Urbanist', sans-serif;
     letter-spacing: 0.8px;
-    font-weight: 400;
+    font-weight: 200;
     color: rgb(114, 99, 95);
 }
 
 html, body {
     height: 100%;
+}
+
+.background {
+    background: url(/assets/images/first-aid-kit.png);
+    background-repeat: repeat;
 }
 
 #nav-area {
@@ -27,7 +32,7 @@ header, nav {
 
 body {
     margin: 0;
-    background-color: rgb(232, 225, 210);
+    background-color: rgb(228, 222, 209);
     display: flex;
     flex-direction: column;
 }
@@ -56,7 +61,7 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: rgb(247, 242, 240);
+    color: rgb(55, 66, 89);
 }
 
 main {
@@ -71,7 +76,15 @@ main {
 body {
     --gap: 20px;
     --view-icon-size: 2rem;
-    --view-border-color: rgb(114, 99, 95);
+    --view-dot-size: 0.3rem;
+    --view-dot-margin: 0.85rem;
+    --view-bg-color: rgb(101, 123, 104);
+    --view-dot-color: rgb(0, 0, 0);
+}
+
+#color-container {
+    display: grid;
+    row-gap: 100px;
 }
 
 #view-container {
@@ -89,37 +102,65 @@ body {
             justify-content: left;
             column-gap: var(--gap);
 
-            padding-bottom: 20px;
         }
 
             #view-square {
                 width: var(--view-icon-size);
                 height: var(--view-icon-size);
 
-                border-style: solid;
-                border-width: 2px;
-                border-color: var(--view-border-color);
+                background-color: var(--view-bg-color);
             }
-
+            
             #view-rounded {
                 width: var(--view-icon-size);
                 height: var(--view-icon-size);
-
-                border-style: solid;
-                border-width: 2px;
+                
                 border-radius: 0.5rem;
-                border-color: var(--view-border-color);
+                background-color: var(--view-bg-color);
                 
             }
-
+            
             #view-circle { 
                 width: var(--view-icon-size);
                 height: var(--view-icon-size);
                 
-                border-style: solid;
-                border-width: 2px;
                 border-radius: 5rem;
-                border-color: var(--view-border-color);
+                background-color: var(--view-bg-color);
+            }
+
+        #view-shapes-dots {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: left;
+            column-gap: var(--gap);
+            padding-bottom: 20px;
+        }
+            #view-square-dot {
+                width: var(--view-dot-size);
+                height: var(--view-dot-size);
+                margin: var(--view-dot-margin);
+                
+                border-radius: 0.3rem;
+                /* background-color: var(--view-dot-color); */
+            }
+            
+            #view-rounded-dot {
+                width: var(--view-dot-size);
+                height: var(--view-dot-size);
+                margin: var(--view-dot-margin);
+                
+                border-radius: 0.3rem;
+                /* background-color: var(--view-dot-color); */
+                
+            }
+            
+            #view-circle-dot { 
+                width: var(--view-dot-size);
+                height: var(--view-dot-size);
+                margin: var(--view-dot-margin);
+                
+                border-radius: 0.3rem;
+                /* background-color: var(--view-dot-color); */
             }
 
         #view-appearance {
@@ -142,10 +183,8 @@ body {
             }
 
                 #view-tiles div {
-                    border-style: solid;
-                    border-width: 2px;
                     border-radius: 2px;
-                    border-color: var(--view-border-color);
+                    background-color: var(--view-bg-color);
                 }
 
             #view-stacked {
@@ -158,13 +197,11 @@ body {
             }
 
                 #view-stacked div {
-                    border-style: solid;
-                    border-width: 2px;
                     border-radius: 2px;
-                    border-color: var(--view-border-color);
+                    background-color: var(--view-bg-color);
                 }
 
-#grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -183,5 +220,5 @@ svg {
 }
 
 svg path {
-    fill: rgb(172, 201, 188);
+    fill: rgb(164, 131, 118);
 }
