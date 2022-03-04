@@ -1,0 +1,210 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  font-family: "Work Sans", sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+#sidebar {
+  font-weight: 400;
+}
+
+#name {
+  font-family: "Abril Fatface", cursive;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+footer {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+body {
+  background-color: white;
+}
+
+#sidebar {
+  color: #0d0d0d;
+}
+
+article a {
+  color: black;
+}
+
+article {
+  color: black;
+}
+
+a {
+  color: #0d0d0d;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar {
+  position: inherit;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  padding: 0 0 0 3rem;
+}
+
+#name {
+  padding: 2rem 0px 2rem 0px;
+}
+
+nav {
+  line-height: 19px;
+}
+nav .sub-nav {
+  text-indent: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 30px;
+}
+
+.current {
+  font-weight: 700;
+}
+
+main {
+  position: relative;
+  margin: 0rem 10rem 10rem 15rem;
+}
+main section {
+  padding: 10rem 0rem 10rem 0rem;
+}
+main article div {
+  padding: 0% 15% 0% 10%;
+}
+main #section-1 {
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+}
+main #section-1 img {
+  content: url("/assets/lounge-room.png");
+  vertical-align: top;
+}
+main #section-1 article {
+  background-color: #7A857A;
+  background-color: white;
+}
+main #section-1 article div {
+  padding-top: 200px;
+}
+main #section-2 {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+}
+main #section-2 img {
+  content: url("/assets/lounge-room2.png");
+  vertical-align: top;
+}
+main #section-2 article {
+  background-color: #AC958E;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+main #section-3 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+main #section-3 video {
+  width: 100%;
+  vertical-align: top;
+}
+main #section-3 article {
+  background-color: #918a99;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+main #section-4 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+main #section-4 video {
+  vertical-align: top;
+  width: 100%;
+}
+main #section-4 article {
+  background-color: #494851;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

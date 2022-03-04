@@ -1,28 +1,123 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="de">
+
 <head>
+    <title>harukis gallery</title>
     <meta charset="UTF-8">
-    <title>aesthetic</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scrollPosIndication.js" defer></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
-    <div id="nav-area">
-        <header>
+    <div id="container">
+        <header id="sidebar">
+            <div id="name">
+                <a href="#section-1">haru.</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#section-1" class="headlines">Lounge Room</a>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="#section-1">In Studio</a>
+                            </li>
+                            <li>
+                                <a href="#section-2">Interior</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#section-3" class="headlines">Human Visualization</a>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="#section-3">Walk Cycle</a>
+                            </li>
+                            <li>
+                                <a href="#section-4">Dance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <a href="#about">About</a>
+            </footer>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html" style="text-decoration: underline; text-underline-offset: 1rem; text-decoration-thickness: 0.3rem;">HOME</a></li>
-                <li><a href="blog.html" >BLOG</a></li>
-                <li><a href="color.html">COLOR</a></li>
-            </ul>
-        </nav>
+    
+        <main>
+            <section id="section-1">
+                <div><a href="subpages/section1.html"><img></a></div>
+                <article>
+                    <div>
+                        <a href="subpages/section1.html">
+                            <h1>LOUNGE ROOM</h1>
+                            <h2>Studio Version</h2>
+                            <br>
+                            <p>
+                                Imaginary lounge space to relax and unwind. Specifically taylored to my imagination and tastes. Minimalism with a touch of luxury and quality combined with a love for hifi analogue technology and natural comfort.
+                            </p>
+                        </a>
+                    </div>
+                </article>
+            </section>
+            
+            <section id="section-2">
+                <article>
+                    <div>
+                        <a href="subpages/section2.html">
+                            <h1>LOUNGE ROOM</h1>
+                            <h2>Interior Version</h2>
+                            <br>
+                            <p>
+                                Possible visualization of the interior design to get a better feel for the space in real situation outside of the studio atmosphere and conditions. The sunshine is gently warming the space.                         
+                            </p>
+                        </a>
+                    </div>
+                </article>
+                <div><a href="subpages/section2.html"><img></a></div>
+            </section>
+    
+            <section id="section-3">
+                <div><a href="subpages/section3.html"><video autoplay loop muted><source src="/assets/walk-cycle.mp4"></video></a></div>
+                <article>
+                    <div>
+                        <a href="subpages/section3.html">
+                            <h1>WALKING FLUFF</h1>
+                            <h2>Hair Simulation Experiments</h2>
+                            <br>
+                            <p>
+                                Some fun hair experiments that are put on a walking human figure. Very abstract but just fun to look at.
+                            </p>
+                        </a>
+                    </div>
+                </article>
+            </section>
+    
+            <section id="section-4">
+                <article>
+                    <div>
+                        <a href="subpages/section4.html">
+                            <h1>DANCE</h1>
+                            <h2>Hair Simulation Experiments</h2>
+                            <br>
+                            <p>
+                                Watch the hair whip to all directions as this figure dances.
+                            </p>
+                        </a>
+                    </div>
+                </article>
+                <div><a href="subpages/section4.html"><video autoplay loop muted><source src="/assets/dance.mp4"></video></a></div>
+            </section>
+        </main>
     </div>
-    <main>
-        hello this is the home page
-    </main>
-    <footer>
-    </footer>
 </body>
 
 </html>

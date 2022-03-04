@@ -1,0 +1,33 @@
+
+$bg-color: hsla(0, 0%, 100%, 1);
+
+$sidebar-color-text: hsla(0, 0%, 5%, 1);
+$article-color-text: hsl(0, 0%, 0%);
+
+$link-color: hsl(23, 51%, 84%);
+$link-hover-color: hsl(23, 69%, 71%);
+$blockquote-color: hsl(120, 15%, 55%);
+$article-color: hsl(215, 15%, 55%);
+
+body {
+    background-color: $bg-color;
+}
+
+#sidebar
+{
+    color: $sidebar-color-text;
+}
+
+article a
+{
+    color: $article-color-text;
+}
+
+article
+{
+    color: $article-color-text;
+}
+
+a {
+    color: $sidebar-color-text;
+}

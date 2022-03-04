@@ -1,0 +1,169 @@
+@use "colors";
+@use "mixins";
+
+html
+{
+    min-height:100%;
+    position: relative;
+}
+
+#container 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar
+{
+    position: inherit;
+}
+
+#sidebar
+{
+    position: fixed;
+    top: 0;
+    padding: 0 0 0 3rem;
+}
+
+#name
+{
+    padding: 2rem 0px 2rem 0px;
+}
+
+nav 
+{
+    line-height: 19px;
+    
+    .sub-nav 
+    {
+        text-indent: 10px;
+    }
+}
+
+footer
+{
+    position: fixed;
+    bottom: 30px;
+}
+
+.current 
+{
+    font-weight: 700;
+}
+
+main 
+{
+    position: relative;
+    margin: 0rem 10rem 10rem 15rem;
+
+    section 
+    {
+        padding: 10rem 0rem 10rem 0rem;
+    }
+
+    article div
+    {
+        padding: 0% 15% 0% 10%;
+    }
+
+    #section-1
+    {
+        display: grid;
+        grid-template-columns: 0.6fr 0.4fr;
+        // border: 1px solid black ;
+
+        img
+        {
+            content: url('/assets/lounge-room.png');
+            // filter:grayscale(0.7);
+            vertical-align: top;
+        }
+
+        article
+        {
+            // background-color: hsl(116, 13%, 26%);
+            background-color: #7A857A;
+            background-color: white;
+            // border-left: 1px solid black;
+
+            div
+            {
+                padding-top: 200px;
+            }
+        }
+    }
+
+    #section-2
+    {
+        display: grid;
+        grid-template-columns: 0.4fr 0.6fr;
+        // border: 1px solid black ;
+
+        img
+        {
+            content: url('/assets/lounge-room2.png');
+            // filter:grayscale(0.7);
+            vertical-align: top;
+
+        }
+
+        article
+        {
+            // background-color: hsl(15, 19%, 58%);
+            background-color: #AC958E;
+            background-color: white;
+            // border-right: 1px solid black ;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    #section-3
+    {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        // border: 1px solid black ;
+
+        video
+        {
+            width: 100%;
+            // filter:grayscale(0.7);
+            vertical-align: top;
+
+        }
+
+        article
+        {
+            // background-color: hsl(268, 7%, 59%);
+            background-color: hsl(268, 7%, 57%);
+            background-color: white;
+            // border-left: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    #section-4
+    {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        // border: 1px solid black ;
+
+        video
+        {
+            vertical-align: top;
+            width: 100%;
+            // filter:grayscale(0.7);
+        }
+
+        article
+        {
+            // background-color: hsl(216, 5%, 21%);
+            background-color: hsl(247, 6%, 30%);
+            background-color: white;
+            // border-right: 1px solid black ;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
