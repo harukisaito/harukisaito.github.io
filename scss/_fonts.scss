@@ -1,5 +1,51 @@
+// $general-font: 'Work Sans', sans-serif;
+// // $basic-font-size: 10px;
+// $basic-font-size: 0.625rem;
+
+// :root {
+//     font-family: $general-font;
+//     font-size: $basic-font-size;
+//     line-height: 1.5;
+// }
+
+// #sidebar
+// {
+//     font-weight: 400;
+// }
+
+// #name 
+// {
+//     font-family: 'Abril Fatface', cursive;
+//     font-size: 3.2rem;
+//     letter-spacing: 2px;
+// }
+
+// footer
+// {
+//     font-weight: 600;
+// }
+
+// h1
+// {
+//     font-size: 3rem;
+//     font-weight: 300;
+// }
+
+// h2
+// {
+//     font-size: 1.7rem;
+//     font-weight: 300;
+// }
+
+// p
+// {
+//     font-size: 1.2rem;
+//     font-weight: 300;
+// }
+
 $general-font: 'Work Sans', sans-serif;
-$basic-font-size: 10px;
+// $basic-font-size: 10px;
+$basic-font-size: 1rem;
 
 :root {
     font-family: $general-font;
@@ -9,37 +55,39 @@ $basic-font-size: 10px;
 
 #sidebar
 {
-    font-weight: 400;
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    ul li 
+    {
+        line-height: 1.7;
+    }
 }
 
 #name 
 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 32px;
+    font-size: 2.5rem;
     letter-spacing: 2px;
-}
-
-footer
-{
-    font-weight: 600;
 }
 
 h1
 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 h2
 {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 p
 {
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 300;
 }
+
 
 

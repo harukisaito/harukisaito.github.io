@@ -6,37 +6,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- fonts -->
+    <script src="../js/website.js" defer></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <div id="main-container">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
+    <svg id="fader"></svg>
+
     <header id="sidebar">
         <div id="name">
             <a href="/index.html#section-1">haru.</a>
         </div>
-        <footer>
-            <a href="#about">About</a>
-        </footer>
     </header>
 
-    <main id="lounge-room">
+    <main>
         <section id="section-4">
-            <article>
+            <div class="media"><a href="subpages/section4.html"><video autoplay loop muted><source src="/assets/dance.mp4"></video></a></div>
+            <article class="text">
                 <div>
-                    <h1>DANCE</h1>
-                    <h2>Hair Simulation Experiments</h2>
-                    <br>
-                    <p>
-                        Watch the hair whip to all directions as this figure dances.
-                    </p>
+                    <a href="subpages/section4.html">
+                        <h1>DANCE</h1>
+                        <h2>Hair Simulation Experiments</h2>
+                        <br>
+                        <p>
+                            Watch the hair whip into all directions as this figure dances.
+                        </p>
+                    </a>
                 </div>
             </article>
-            <div><video autoplay loop muted><source src="/assets/dance.mp4"></video></div>
         </section>
     </main>
+
 </body>
 
 </html>

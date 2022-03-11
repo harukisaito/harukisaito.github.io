@@ -46,41 +46,41 @@ form {
 
 :root {
   font-family: "Work Sans", sans-serif;
-  font-size: 10px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 #sidebar {
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+#sidebar ul li {
+  line-height: 1.7;
 }
 
 #name {
   font-family: "Abril Fatface", cursive;
-  font-size: 32px;
+  font-size: 2.5rem;
   letter-spacing: 2px;
 }
 
-footer {
-  font-weight: 600;
-}
-
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 p {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
 body {
-  background-color: white;
+  background-color: #ebebe5;
 }
 
 #sidebar {
@@ -104,26 +104,20 @@ html {
   position: relative;
 }
 
-#container {
-  display: flex;
-  flex-direction: column;
-}
-
-#sidebar {
-  position: inherit;
-}
-
 #sidebar {
   position: fixed;
   top: 0;
-  padding: 0 0 0 3rem;
+  width: 300px;
+  height: 100%;
+  z-index: 10;
 }
 
 #name {
-  padding: 2rem 0px 2rem 0px;
+  padding: 25px 0 0 50px;
 }
 
 nav {
+  padding: 10px 0 0 50px;
   line-height: 19px;
 }
 nav .sub-nav {
@@ -132,79 +126,163 @@ nav .sub-nav {
 
 footer {
   position: fixed;
-  bottom: 30px;
+  bottom: 3vw;
+  left: 50px;
 }
 
 .current {
   font-weight: 700;
 }
 
+.media {
+  grid-area: media;
+}
+
+.text {
+  grid-area: text;
+}
+
 main {
-  position: relative;
-  margin: 0rem 10rem 10rem 15rem;
+  grid-column-start: 2;
+  margin-left: 300px;
+}
+main article p {
+  padding: 1vw 0vw 0vw 0vw;
+  width: 300px;
 }
 main section {
-  padding: 10rem 0rem 10rem 0rem;
+  padding: 3vw 0 3vw 0;
 }
-main article div {
-  padding: 0% 15% 0% 10%;
-}
-main #section-1 {
+main #section-1,
+main #section-2,
+main #section-3,
+main #section-4 {
   display: grid;
   grid-template-columns: 0.6fr 0.4fr;
+  grid-template-areas: "media text";
+}
+main #section-1 article,
+main #section-2 article,
+main #section-3 article,
+main #section-4 article {
+  position: relative;
+}
+main #section-1 article div,
+main #section-2 article div,
+main #section-3 article div,
+main #section-4 article div {
+  position: absolute;
+  bottom: 0;
+  left: 3vw;
 }
 main #section-1 img {
   content: url("/assets/lounge-room.png");
   vertical-align: top;
 }
-main #section-1 article {
-  background-color: #7A857A;
-  background-color: white;
-}
-main #section-1 article div {
-  padding-top: 200px;
-}
-main #section-2 {
-  display: grid;
-  grid-template-columns: 0.4fr 0.6fr;
-}
 main #section-2 img {
   content: url("/assets/lounge-room2.png");
   vertical-align: top;
-}
-main #section-2 article {
-  background-color: #AC958E;
-  background-color: white;
-  display: flex;
-  align-items: center;
-}
-main #section-3 {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
 }
 main #section-3 video {
   width: 100%;
   vertical-align: top;
 }
-main #section-3 article {
-  background-color: #918a99;
-  background-color: white;
-  display: flex;
-  align-items: center;
-}
-main #section-4 {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-}
 main #section-4 video {
-  vertical-align: top;
   width: 100%;
+  vertical-align: top;
 }
-main #section-4 article {
-  background-color: #494851;
-  background-color: white;
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 870px) {
+  main #section-1,
+main #section-2,
+main #section-3,
+main #section-4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "media" "text";
+  }
+  main #section-1 article div,
+main #section-2 article div,
+main #section-3 article div,
+main #section-4 article div {
+    padding: 3vw 0 3vw 0;
+    position: sticky;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #sidebar {
+    position: absolute;
+  }
+  #sidebar #name {
+    padding-left: 2vw;
+  }
+  #sidebar nav {
+    padding-left: 2vw;
+  }
+
+  footer {
+    position: static;
+    padding: 30px 0 0 2vw;
+  }
+
+  #container {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding-top: 300px;
+    margin: 0vw 2vw 0vw 2vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  #sidebar {
+    margin-left: 1rem;
+  }
+
+  #container {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    margin: 0vw 1vw 0vw 1vw;
+  }
+}
+#fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: #ebebe5;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#fader.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+
+#fader.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
 }
 
 /*# sourceMappingURL=styles.css.map */
