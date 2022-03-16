@@ -1,0 +1,312 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#sidebar {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+#sidebar ul li {
+  line-height: 1.7;
+}
+
+#name {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+main > p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+#sidebar {
+  color: #0d0d0d;
+}
+
+article a {
+  color: black;
+}
+
+article {
+  color: black;
+}
+
+a {
+  color: #0d0d0d;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 10;
+}
+
+#name {
+  padding: 25px 0 0 50px;
+}
+
+nav {
+  padding: 10px 0 0 50px;
+  line-height: 19px;
+}
+nav .sub-nav {
+  text-indent: 10px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 3vw;
+  left: 50px;
+}
+
+.current {
+  font-weight: 700;
+}
+
+.media {
+  grid-area: media;
+}
+
+.text {
+  grid-area: text;
+}
+
+main {
+  grid-column-start: 2;
+  margin-left: 300px;
+}
+main article p {
+  padding: 1vw 0vw 0vw 0vw;
+  width: 300px;
+}
+main section {
+  padding: 3vw 0 3vw 0;
+}
+main #section-1,
+main #section-2,
+main #section-3,
+main #section-4 {
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  grid-template-areas: "media text";
+}
+main #section-1 article,
+main #section-2 article,
+main #section-3 article,
+main #section-4 article {
+  position: relative;
+}
+main #section-1 article div,
+main #section-2 article div,
+main #section-3 article div,
+main #section-4 article div {
+  position: absolute;
+  bottom: 0;
+  left: 3vw;
+}
+main #section-1 img {
+  content: url("/assets/lounge-room.png");
+  vertical-align: top;
+}
+main #section-2 img {
+  content: url("/assets/lounge-room2.png");
+  vertical-align: top;
+}
+main #section-3 video {
+  width: 100%;
+  vertical-align: top;
+}
+main #section-4 video {
+  width: 100%;
+  vertical-align: top;
+}
+@media screen and (max-width: 870px) {
+  main #section-1,
+main #section-2,
+main #section-3,
+main #section-4 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "media" "text";
+  }
+  main #section-1 article div,
+main #section-2 article div,
+main #section-3 article div,
+main #section-4 article div {
+    padding: 3vw 0 3vw 0;
+    position: sticky;
+  }
+}
+
+main h1 {
+  margin: 0;
+  padding: 3vw 0 3vw 0;
+}
+main p {
+  width: 400px;
+}
+
+#back-arrow {
+  padding: 40px 0 0 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  #sidebar {
+    position: absolute;
+  }
+  #sidebar #name {
+    padding-left: 2vw;
+  }
+  #sidebar #back-arrow {
+    padding-left: 2vw;
+  }
+  #sidebar nav {
+    padding-left: 2vw;
+  }
+
+  #footer {
+    position: static;
+    padding: 30px 0 0 2vw;
+  }
+
+  #container {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding-top: 90px;
+    margin: 0vw 2vw 0vw 2vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  main {
+    margin: 0vw 1vw 0vw 1vw;
+  }
+
+  main > p {
+    width: 90%;
+  }
+
+  #sidebar {
+    height: 0;
+  }
+}
+#fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: #f2f2f2;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#fader.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+
+#fader.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
+}
+
+/*# sourceMappingURL=styles-sub.css.map */

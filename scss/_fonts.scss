@@ -1,50 +1,4 @@
-// $general-font: 'Work Sans', sans-serif;
-// // $basic-font-size: 10px;
-// $basic-font-size: 0.625rem;
-
-// :root {
-//     font-family: $general-font;
-//     font-size: $basic-font-size;
-//     line-height: 1.5;
-// }
-
-// #sidebar
-// {
-//     font-weight: 400;
-// }
-
-// #name 
-// {
-//     font-family: 'Abril Fatface', cursive;
-//     font-size: 3.2rem;
-//     letter-spacing: 2px;
-// }
-
-// footer
-// {
-//     font-weight: 600;
-// }
-
-// h1
-// {
-//     font-size: 3rem;
-//     font-weight: 300;
-// }
-
-// h2
-// {
-//     font-size: 1.7rem;
-//     font-weight: 300;
-// }
-
-// p
-// {
-//     font-size: 1.2rem;
-//     font-weight: 300;
-// }
-
 $general-font: 'Work Sans', sans-serif;
-// $basic-font-size: 10px;
 $basic-font-size: 1rem;
 
 :root {
@@ -73,11 +27,16 @@ $basic-font-size: 1rem;
 
 h1
 {
+    font-size: 2rem;
+}
+
+h2
+{
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-h2
+h3 
 {
     font-size: 1rem;
     font-weight: 400;
@@ -89,5 +48,10 @@ p
     font-weight: 300;
 }
 
+main > p
+{
+    font-size: 1rem;
+    text-align: justify;
+}
 
 

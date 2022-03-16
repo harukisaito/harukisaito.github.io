@@ -65,11 +65,15 @@ form {
 }
 
 h1 {
+  font-size: 2rem;
+}
+
+h2 {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-h2 {
+h3 {
   font-size: 1rem;
   font-weight: 400;
 }
@@ -79,8 +83,13 @@ p {
   font-weight: 300;
 }
 
+main > p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
 body {
-  background-color: #ebebe5;
+  background-color: #f2f2f2;
 }
 
 #sidebar {
@@ -124,7 +133,7 @@ nav .sub-nav {
   text-indent: 10px;
 }
 
-footer {
+#footer {
   position: fixed;
   bottom: 3vw;
   left: 50px;
@@ -145,6 +154,9 @@ footer {
 main {
   grid-column-start: 2;
   margin-left: 300px;
+}
+main h3 {
+  margin: 0;
 }
 main article p {
   padding: 1vw 0vw 0vw 0vw;
@@ -175,18 +187,15 @@ main #section-4 article div {
   bottom: 0;
   left: 3vw;
 }
-main #section-1 img {
-  content: url("/assets/lounge-room.png");
+main #section-1 img,
+main #section-2 img,
+main #section-3 img,
+main #section-4 img {
   vertical-align: top;
 }
-main #section-2 img {
-  content: url("/assets/lounge-room2.png");
-  vertical-align: top;
-}
-main #section-3 video {
-  width: 100%;
-  vertical-align: top;
-}
+main #section-1 video,
+main #section-2 video,
+main #section-3 video,
 main #section-4 video {
   width: 100%;
   vertical-align: top;
@@ -215,11 +224,14 @@ main #section-4 article div {
   #sidebar #name {
     padding-left: 2vw;
   }
+  #sidebar #back-arrow {
+    padding-left: 2vw;
+  }
   #sidebar nav {
     padding-left: 2vw;
   }
 
-  footer {
+  #footer {
     position: static;
     padding: 30px 0 0 2vw;
   }
@@ -234,18 +246,26 @@ main #section-4 article div {
   }
 }
 @media screen and (max-width: 480px) {
-  #sidebar {
-    margin-left: 1rem;
-  }
-
-  #container {
-    grid-template-columns: 1fr;
-  }
-
   main {
     margin: 0vw 1vw 0vw 1vw;
   }
+
+  #sidebar {
+    height: 0;
+  }
 }
+main > h3 {
+  margin: 0;
+  padding: 3vw 0 3vw 0;
+}
+main p {
+  width: 400px;
+}
+
+#back-arrow {
+  padding: 40px 0 0 50px;
+}
+
 #fader {
   position: fixed;
   top: 0;
@@ -254,7 +274,7 @@ main #section-4 article div {
   height: 100%;
   z-index: 999999;
   pointer-events: none;
-  background: #ebebe5;
+  background: #f2f2f2;
   animation-duration: 300ms;
   animation-timing-function: ease-in-out;
 }
@@ -285,4 +305,4 @@ main #section-4 article div {
   animation-name: fade-in;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles-main.css.map */

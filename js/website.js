@@ -13,6 +13,11 @@ const updateIndication = () => {
     mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
 
+    if(section == null)
+    {
+      return;
+    }
+
     if (
       section.offsetTop <= fromTop + 200 &&
       section.offsetTop + section.offsetHeight > fromTop + 200
