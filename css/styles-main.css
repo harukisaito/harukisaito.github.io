@@ -220,20 +220,21 @@ main #section-4 article div {
 @media screen and (max-width: 1200px) {
   #sidebar {
     position: absolute;
+    height: 0;
   }
   #sidebar #name {
-    padding-left: 2vw;
+    padding-left: 3vw;
   }
   #sidebar #back-arrow {
-    padding-left: 2vw;
+    padding-left: 3vw;
   }
   #sidebar nav {
-    padding-left: 2vw;
+    padding-left: 3vw;
   }
 
   #footer {
     position: static;
-    padding: 30px 0 0 2vw;
+    padding: 30px 0 0 3vw;
   }
 
   #container {
@@ -242,30 +243,14 @@ main #section-4 article div {
 
   main {
     padding-top: 300px;
-    margin: 0vw 2vw 0vw 2vw;
+    margin: 0vw 3vw 0vw 3vw;
   }
 }
 @media screen and (max-width: 480px) {
-  main {
-    margin: 0vw 1vw 0vw 1vw;
-  }
-
   #sidebar {
     height: 0;
   }
 }
-main > h3 {
-  margin: 0;
-  padding: 3vw 0 3vw 0;
-}
-main p {
-  width: 400px;
-}
-
-#back-arrow {
-  padding: 40px 0 0 50px;
-}
-
 #fader {
   position: fixed;
   top: 0;

@@ -184,18 +184,15 @@ main #section-4 article div {
   bottom: 0;
   left: 3vw;
 }
-main #section-1 img {
-  content: url("/assets/lounge-room.png");
+main #section-1 img,
+main #section-2 img,
+main #section-3 img,
+main #section-4 img {
   vertical-align: top;
 }
-main #section-2 img {
-  content: url("/assets/lounge-room2.png");
-  vertical-align: top;
-}
-main #section-3 video {
-  width: 100%;
-  vertical-align: top;
-}
+main #section-1 video,
+main #section-2 video,
+main #section-3 video,
 main #section-4 video {
   width: 100%;
   vertical-align: top;
@@ -234,18 +231,18 @@ main p {
     position: absolute;
   }
   #sidebar #name {
-    padding-left: 2vw;
+    padding-left: 3vw;
   }
   #sidebar #back-arrow {
-    padding-left: 2vw;
+    padding-left: 3vw;
   }
   #sidebar nav {
-    padding-left: 2vw;
+    padding-left: 3vw;
   }
 
   #footer {
     position: static;
-    padding: 30px 0 0 2vw;
+    padding: 30px 0 0 3vw;
   }
 
   #container {
@@ -254,14 +251,10 @@ main p {
 
   main {
     padding-top: 90px;
-    margin: 0vw 2vw 0vw 2vw;
+    margin: 0vw 3vw 0vw 3vw;
   }
 }
 @media screen and (max-width: 480px) {
-  main {
-    margin: 0vw 1vw 0vw 1vw;
-  }
-
   main > p {
     width: 90%;
   }

@@ -125,7 +125,6 @@ main
             
             article div
             {
-                // put into right corner
                 padding: 3vw 0 3vw 0;
                 position: sticky;
             }
@@ -133,7 +132,6 @@ main
     }
 }
 
-// @media screen and (max-width: 1024px)
 @media screen and (max-width: 1200px)
 {
     
@@ -142,24 +140,26 @@ main
         position: absolute;
         #name
         {
-            padding-left: 2vw;  
+            padding-left: 3vw;  
         }
 
         #back-arrow
         {
-            padding-left: 2vw;
+            padding-left: 3vw;
         }
 
         nav
         {
-            padding-left: 2vw;
+            padding-left: 3vw;
         }
+
+        height: 0;
     }
 
     #footer
     {
         position: static;
-        padding: 30px 0 0 2vw;
+        padding: 30px 0 0 3vw;
     }
 
     #container
@@ -170,43 +170,15 @@ main
     main 
     {
         padding-top: 300px;
-        margin: 0vw 2vw 0vw 2vw;
-
-        
+        margin: 0vw 3vw 0vw 3vw;
     }
 }
 
 
 @media screen and (max-width: 480px)
 {
-    main 
-    {
-        margin: 0vw 1vw 0vw 1vw;
-    }
-
     #sidebar 
     {
         height: 0;
     }
-}
-
-
-// about page
-
-main {
-    > h3 
-    {
-        margin: 0;
-        padding: 3vw 0 3vw 0;
-    }
-
-    p
-    {
-        width: 400px;
-    }
-}
-
-#back-arrow
-{
-    padding: 40px 0 0 50px;
 }
